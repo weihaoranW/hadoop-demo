@@ -18,16 +18,19 @@ vim hadoop-env.sh.
 更改JAVA_HOME的位置并保存.   
 ## 设置本机的ssh登录不需要口令.   
 ssh localhost.   
+## 测试安装是否完成
+cd /opt/hadoop/
+bin/hadoop
+bin/hadoop version
 ## 格式化文件系统
 bin/hdfs namenode -format
 ## 启动NameNode 和DataNode
 sbin/start-dfs.sh
 ## 浏览NameNode的web接口
 http://localhost:50070/
-## 
-
-
-
-
-
+## 运行demo
+mkdir input
+cp etc/hadoop/\*.xml input
+bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.1.jar grep input output 'dfs[a-z.]+'
+cat output/\*
 
