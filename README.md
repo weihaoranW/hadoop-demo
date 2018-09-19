@@ -5,7 +5,7 @@ ip及机器名分别为:
 - debian-master-66 192.168.122.66   (NN)
 - debian-master-67 192.168.122.67   (ND)
 - debian-master-68 192.168.122.68   (ND)
-- debian-master-69 192.168.122.69   (ND)
-每机分配1核cpu,1G内存.
+- debian-master-69 192.168.122.69   (ND)  
+每机分配1核cpu,1G内存.  
 虚拟机上需要安装以下软件,有些已经具备****rsync,openssh-server**
-dns,配置成宿主机的dns即可,否则,无法访问网络.
+dns,配置成宿主机的dns即可,否则,无法访问网络.  
