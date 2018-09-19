@@ -18,7 +18,13 @@ vim hadoop-env.sh.
 更改JAVA_HOME的位置并保存.   
 ## 设置本机的ssh登录不需要口令.   
 ssh localhost.   
-
+## 格式化文件系统
+bin/hdfs namenode -format
+## 启动NameNode 和DataNode
+sbin/start-dfs.sh
+## 浏览NameNode的web接口
+http://localhost:50070/
+## 
 
 
 
